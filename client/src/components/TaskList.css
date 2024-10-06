@@ -1,0 +1,139 @@
+/* Apply gradient background to the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Blue gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.task-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: #0072ff;
+    margin-bottom: 20px;
+}
+
+/* Calendar container */
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for react-calendar */
+.react-calendar {
+    border: none;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Calendar days styling */
+.react-calendar__tile {
+    background-color: #f0f8ff;
+    border-radius: 6px;
+    color: #333;
+}
+
+.react-calendar__tile--active {
+    background-color: #0072ff;
+    color: white;
+    border-radius: 6px;
+}
+
+/* Task list styling */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Task item text */
+.task-item span {
+    font-weight: bold;
+    color: #0072ff;
+}
+
+/* Task delete button */
+.task-item button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.task-item button:hover {
+    background: #c9302c;
+}
+
+/* Task actions (Get Task, Update Task) */
+.task-actions {
+    margin-top: 20px;
+}
+
+/* Form inputs and selects */
+.task-actions input, .task-actions select {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.task-actions input:focus, .task-actions select:focus {
+    border-color: #0072ff;
+}
+
+/* Update task button */
+.task-actions button {
+    background: #0072ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.task-actions button:hover {
+    background: #0056b3;
+}
+
+/* Gradient header for task details */
+h2 {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
